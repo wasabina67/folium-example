@@ -4,10 +4,17 @@ import pandas as pd
 
 def main():
     data = {
-        "place": [],
-        "population": [],
-        "latitude": [],
-        "longitude": [],
+        "place": [
+            "旭川市",
+            "札幌市北区",
+            "札幌市東区",
+            "函館市",
+            "札幌市中央区",
+            "札幌市豊平区",
+        ],
+        "population": [333294, 287576, 260414, 261231, 255313, 213790],
+        "latitude": [43.7706, 43.1155, 43.0797, 41.7687, 43.0555, 43.0306],
+        "longitude": [142.3649, 141.3402, 141.3534, 140.7288, 141.3400, 141.3664],
     }
     df = pd.DataFrame(data)
     # df = pd.read_csv("data.csv")
