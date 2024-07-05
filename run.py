@@ -32,7 +32,7 @@ def main():
     for _, row in df.iterrows():
         folium.CircleMarker(
             location=[row["latitude"], row["longitude"]],
-            radius=10,
+            radius=row["population"] / 10000,
             color="blue",
             fill=True,
             fill_color="blue",
