@@ -12,7 +12,7 @@ def main():
     df = pd.DataFrame(data)
     # df = pd.read_csv("data.csv")
 
-    base_location = [43.06417, 141.34694]
+    base_location = [43.0618, 141.3545]
     map = folium.Map(location=base_location, zoom_start=8)
 
     for _, row in df.iterrows():
